@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <style>
+        input{
+            background-color: cornsilk;
+        }
+        .Submit{
+            background-color: black;
+            color:white;
+        }
+    </style>
+    <body>
+        <div align="center">
+            <div align="center"  style="background-color: aquamarine;">
+                <div class="msg">{{msg}}</div>
+                <form action="/login" method="POST">
+                    <center><h2>LOGIN</h2></center>
+                    <input id="Username" placeholder="Type your username" type="text" class="Username" name="Username"><br/><br/>
+                    <input id="Password" placeholder="Type your password" type="password" class="Password" name="Password"><br/><br/>
+                    <input type="Submit" class="Submit" value="Login" id="Submit"><br/><br/>
+                </form>
+            </div>
+            <p class="Registration">Don't have an account yet?<a href="/register">Sign up here</a></p>
+        </div>
+    </body>
+</html>

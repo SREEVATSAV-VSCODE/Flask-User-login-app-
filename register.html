@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <style>
+            input{
+                background-color: cornsilk;
+            }
+            .Submit{
+                background-color: black;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <div align="center">
+            <div align="center"style="background-color: aquamarine;">
+                <div class="msg">{{msg}}</div>
+                <h2>Registration</h2>
+                <form action="/register" method="POST">
+                    <input type="text" id="Username" name="Username" text="Username" placeholder="Type desired username"><br/><br/>
+                    <input id="Password" placeholder="Type strong password" type="password" class="Password" name="Password"><br/><br/>
+                    <input id="Email" name="Email" placeholder="Type your email" type="email"><br><br>
+                    <input type="Submit" class="Submit" value="Sign Up" id="Submit"><br/><br/>
+                </form>           
+            </div>
+            <p class="Login" style="background-color:rgb(0, 243, 142)">Already have an account? <a href="/login">Login here</a></p>
+        </div>
+    </body>
+</html>
